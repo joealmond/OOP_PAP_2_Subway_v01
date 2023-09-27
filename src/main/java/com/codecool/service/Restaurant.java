@@ -28,5 +28,17 @@ public class Restaurant {
                 .mapToDouble(OrderItem::price)
                 .sum();
     }
+    public List<String> getStatistics() {
+        List<String> statistics = new ArrayList<>();
+        statistics.add("Restaurant name: " + name);
+        statistics.add("Total Orders: " + orders.size());
+        statistics.add("Total income: " + calculateIncome());
+        int count = 0;
+        for (OrderItem orderItem : orders) {
+            statistics.add("item" + count + ": " + "\n" + "Type: " + orderItem.name() + "\n" + "Price: " + orderItem.price());
+            count++;
+        }
+        return statistics;
+    }
 
 }
