@@ -15,18 +15,18 @@ public class Application {
 
         Drink cola = new Drink(COCACOLA);
         print("Drink:");
-        print("Name", cola.name());
+        print("Favour", cola.favour());
         print("Price",String.valueOf(cola.price()));
 
-        Sandwitch normalBurger = new Sandwitch("Normal Burger", List.of(BUN, MEAT, SALAD));
+        Sandwitch normalBurger = new Sandwitch(List.of(BUN, MEAT, SALAD));
         print("Buger:");
-        print("Burger name",normalBurger.name());
-        print("Burger price",String.valueOf(normalBurger.price()));
+        print("Sandwich type",normalBurger.getSandwitchType());
+        print("Sandwich price",String.valueOf(normalBurger.price()));
 
         Restaurant subway = new Restaurant("Subway");
         subway.addAllOrderItem(List.of(normalBurger,cola));
         subway.addOrder(cola);
-        print("Income",String.valueOf(subway.calculateIncome()));
+        print("Restaurant Income",String.valueOf(subway.calculateIncome()));
 
     }
 }
