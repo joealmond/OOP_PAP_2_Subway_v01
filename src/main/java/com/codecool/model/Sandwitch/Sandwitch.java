@@ -21,7 +21,7 @@ public class Sandwitch implements OrderItem {
                 .sum();
     }
 
-    public String getSandwitchType() {
+    public String type() {
         return sandwitch.stream()
                 .map(Enum::name)
                 .collect(Collectors.joining(", "));

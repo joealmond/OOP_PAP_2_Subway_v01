@@ -29,4 +29,17 @@ public class Restaurant {
                 .sum();
     }
 
+    public List<String> getStatistics() {
+        List<String> statistics = new ArrayList<>();
+        statistics.add("Restaurant name: " + name);
+        statistics.add("Total Orders: " + orders.size());
+        statistics.add("Total income: " + calculateIncome());
+        int count = 0;
+        for (OrderItem orderItem : orders) {
+            statistics.add("item" + count + ": " + "\n" + "Type: " + orderItem.type() + "\n" + "Price: " + orderItem.price());
+            count++;
+        }
+        return statistics;
+    }
+
 }

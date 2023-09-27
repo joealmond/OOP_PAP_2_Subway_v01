@@ -15,7 +15,7 @@ public class Drink implements OrderItem {
         return favour.price();
     }
 
-    public String favour() {
+    public String type() {
         return favour.toString();
     }
 
