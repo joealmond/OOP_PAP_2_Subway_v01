@@ -2,7 +2,7 @@ package com.codecool.model;
 
 public abstract class OrderItem {
 
-    String name;
+    private final String name;
 
     public OrderItem(String name) {
         this.name = name;

@@ -8,7 +8,7 @@ import java.util.List;
 public class Restaurant {
 
     private final List<OrderItem> orders;
-    String name;
+    private final String name;
 
     public Restaurant(String name) {
         orders = new ArrayList<>();

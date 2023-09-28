@@ -4,7 +4,7 @@ import com.codecool.model.OrderItem;
 
 public class Drink extends OrderItem {
 
-    Favour favour;
+    private final Favour favour;
 
     public Drink(Favour favour) {
         super(favour.name());
