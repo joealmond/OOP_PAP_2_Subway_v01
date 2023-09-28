@@ -4,7 +4,7 @@ import com.codecool.model.OrderItem;
 
 public class Drink implements OrderItem {
 
-    Favour favour;
+    private final Favour favour;
 
     public Drink(Favour favour) {
         this.favour = favour;
@@ -14,7 +14,7 @@ public class Drink implements OrderItem {
     public double price() {
         return favour.price();
     }
-
+    @Override
     public String type() {
         return favour.toString();
     }

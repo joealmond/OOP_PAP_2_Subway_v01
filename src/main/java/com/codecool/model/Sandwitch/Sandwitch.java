@@ -21,6 +21,7 @@ public class Sandwitch implements OrderItem {
                 .sum();
     }
 
+    @Override
     public String type() {
         return sandwitch.stream()
                 .map(Enum::name)

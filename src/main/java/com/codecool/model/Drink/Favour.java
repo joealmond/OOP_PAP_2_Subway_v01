@@ -5,7 +5,7 @@ public enum Favour {
     FANTA(40),
     ICETEA(35);
 
-    final double price;
+    final private double price;
 
     Favour(double price) {
         this.price = price;

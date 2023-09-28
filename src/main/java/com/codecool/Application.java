@@ -6,9 +6,9 @@ import com.codecool.service.Restaurant;
 
 import java.util.List;
 
-import static com.codecool.view.Console.print;
+import static com.codecool.model.Drink.Favour.COCACOLA;
 import static com.codecool.model.Sandwitch.SandwichIngredient.*;
-import static com.codecool.model.Drink.Favour.*;
+import static com.codecool.view.Console.print;
 import static com.codecool.view.Console.printStatistics;
 
 public class Application {
@@ -20,10 +20,10 @@ public class Application {
 
         Restaurant subway = new Restaurant("Subway");
 
-        subway.addAllOrderItem(List.of(normalBurger,cola));
+        subway.addAllOrderItem(List.of(normalBurger, cola));
         subway.addOrder(cola);
 
-        print("Restaurant Income",String.valueOf(subway.calculateIncome()));
+        print("Restaurant Income", String.valueOf(subway.calculateIncome()));
         printStatistics(subway.getStatistics());
 
     }

@@ -6,7 +6,7 @@ public enum SandwichIngredient {
     SALAD(5),
     CHESE(5);
 
-    final double price;
+    final private double price;
 
     SandwichIngredient(double price) {
         this.price = price;

@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Restaurant {
 
-    String name;
     private final List<OrderItem> orders;
+    private final String name;
 
     public Restaurant(String name) {
         orders = new ArrayList<>();
@@ -18,6 +18,7 @@ public class Restaurant {
     public void addOrder(OrderItem item) {
         orders.add(item);
     }
+
     public void addAllOrderItem(List<OrderItem> orders) {
         this.orders.addAll(orders);
     }
