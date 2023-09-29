@@ -31,6 +31,7 @@ public class Restaurant {
     }
 
     public List<String> getStatistics() {
+        // helyette legyen logger intrface vagy report string
         List<String> statistics = new ArrayList<>();
         statistics.add("Restaurant name: " + name);
         statistics.add("Total Orders: " + orders.size());
