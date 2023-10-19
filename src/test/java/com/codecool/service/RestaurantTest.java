@@ -24,7 +24,7 @@ class RestaurantTest {
 
         // arrange
         Drink cola = new Drink(Favour.COCACOLA);
-        Sandwitch burger = new Sandwitch(List.of(SandwichIngredient.BUN, SandwichIngredient.MEAT, SandwichIngredient.SALAD));
+        Sandwitch burger = new Sandwitch(List.of(SandwichIngredient.BUN, SandwichIngredient.MEAT, SandwichIngredient.SALAD),"Meat");
         restaurant.addOrder(cola);
         restaurant.addOrder(burger);
 

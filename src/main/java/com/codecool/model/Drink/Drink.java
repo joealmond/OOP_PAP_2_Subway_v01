@@ -2,11 +2,12 @@ package com.codecool.model.Drink;
 
 import com.codecool.model.OrderItem;
 
-public class Drink implements OrderItem {
+public class Drink extends OrderItem {
 
     private final Favour favour;
 
     public Drink(Favour favour) {
+        super(favour.name());
         this.favour = favour;
     }
 

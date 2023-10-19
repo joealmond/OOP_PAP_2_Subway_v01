@@ -16,7 +16,7 @@ public class Application {
 
         Drink cola = new Drink(COCACOLA);
 
-        Sandwitch normalBurger = new Sandwitch(List.of(BUN, MEAT, SALAD));
+        Sandwitch normalBurger = new Sandwitch(List.of(BUN, MEAT, SALAD),"Meat");
 
         Restaurant subway = new Restaurant("Subway");
 

@@ -1,7 +1,12 @@
 package com.codecool.model;
 
-public interface OrderItem {
-    double price();
+public abstract class OrderItem {
+    private final String name;
 
-    String type();
+    protected OrderItem(String name) {
+        this.name = name;
+    }
+
+    public abstract double price();
+    public abstract String type();
 }
